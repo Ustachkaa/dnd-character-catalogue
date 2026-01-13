@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background: radial-gradient(circle at top, #141414, #200d4d);
+  color: white;
+}
+
+body.landing {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #141414, #200d4d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+}
+.landing__title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.page-title {
+  text-align: center;
+  padding: 30px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  width: 260px;
+  height: 400px;
+  perspective: 1200px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.card.flipped .content {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.6);
+}
+
+.front::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.85)
+  );
+  border-radius: 16px;
+}
+
+.front .inner {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.front h2 {
+  margin-bottom: 12px;
+}
+
+.back {
+  background: #12002f;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+
+.back .inner {
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.back p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.button {
+  background: #7b2cbf;
+  padding: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 140px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fighter {
+  background-image: url("../assets/images/Bird_Woman.jpg");
+}
+.wizard {
+  background-image: url("../assets/images/Death.jpg");
+}
+.sorcerer {
+  background-image: url("../assets/images/Devil_Spawn.jpg");
+}
+.druid {
+  background-image: url("../assets/images/Forest_Fairy.jpg");
+}
+.paladin {
+  background-image: url("../assets/images/God_Of_Sun.jpg");
+}
+.rogue {
+  background-image: url("../assets/images/Legolas_Elf.jpg");
+}
+.bard {
+  background-image: url("../assets/images/Soul_Of_Wisdom.jpg");
+}
+.ranger {
+  background-image: url("../assets/images/Samurai_Jack.jpg");
+}
+.cleric {
+  background-image: url("../assets/images/Princess.jpg");
+}
