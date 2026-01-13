@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Character</title>
+    <link rel="stylesheet" href="css/cards.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="page-title"><h1>Choose Your Character</h1></header>
+    <main class="wrapper">
+      <!-- Fighter -->
+      <div class="card" id="card-1">
+        <div class="content">
+          <div class="front fighter">
+            <div class="inner">
+              <h2>Fighter</h2>
+              <span class="button" onclick="flipCard('card-1')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Strength</span><span>18</span></div>
+              <div class="info"><span>Dexterity</span><span>14</span></div>
+              <div class="info"><span>Intelligence</span><span>10</span></div>
+              <p>A master of martial combat, skilled with weapons and armor.</p>
+              <span class="button return" onclick="flipCard('card-1')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wizard -->
+      <div class="card" id="card-2">
+        <div class="content">
+          <div class="front wizard">
+            <div class="inner">
+              <h2>Wizard</h2>
+              <span class="button" onclick="flipCard('card-2')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Intelligence</span><span>20</span></div>
+              <div class="info"><span>Wisdom</span><span>16</span></div>
+              <div class="info"><span>Strength</span><span>8</span></div>
+              <p>
+                A scholarly magic-user manipulating the structure of reality.
+              </p>
+              <span class="button return" onclick="flipCard('card-2')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sorcerer -->
+      <div class="card" id="card-3">
+        <div class="content">
+          <div class="front sorcerer">
+            <div class="inner">
+              <h2>Sorcerer</h2>
+              <span class="button" onclick="flipCard('card-3')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Charisma</span><span>18</span></div>
+              <div class="info"><span>Constitution</span><span>14</span></div>
+              <div class="info"><span>Dexterity</span><span>12</span></div>
+              <p>Born with innate magic, wielding power from within.</p>
+              <span class="button return" onclick="flipCard('card-3')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Druid -->
+      <div class="card" id="card-4">
+        <div class="content">
+          <div class="front druid">
+            <div class="inner">
+              <h2>Druid</h2>
+              <span class="button" onclick="flipCard('card-4')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Wisdom</span><span>18</span></div>
+              <div class="info"><span>Constitution</span><span>14</span></div>
+              <div class="info"><span>Intelligence</span><span>10</span></div>
+              <p>A guardian of nature, wielding primal magic.</p>
+              <span class="button return" onclick="flipCard('card-4')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Paladin -->
+      <div class="card" id="card-5">
+        <div class="content">
+          <div class="front paladin">
+            <div class="inner">
+              <h2>Paladin</h2>
+              <span class="button" onclick="flipCard('card-5')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Strength</span><span>18</span></div>
+              <div class="info"><span>Charisma</span><span>16</span></div>
+              <div class="info"><span>Wisdom</span><span>14</span></div>
+              <p>A holy warrior sworn to justice and righteousness.</p>
+              <span class="button return" onclick="flipCard('card-5')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Rogue -->
+      <div class="card" id="card-6">
+        <div class="content">
+          <div class="front rogue">
+            <div class="inner">
+              <h2>Rogue</h2>
+              <span class="button" onclick="flipCard('card-6')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Dexterity</span><span>18</span></div>
+              <div class="info"><span>Intelligence</span><span>14</span></div>
+              <p>A stealthy expert in precision strikes.</p>
+              <span class="button return" onclick="flipCard('card-6')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bard -->
+      <div class="card" id="card-7">
+        <div class="content">
+          <div class="front bard">
+            <div class="inner">
+              <h2>Bard</h2>
+              <span class="button" onclick="flipCard('card-7')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Charisma</span><span>18</span></div>
+              <div class="info"><span>Dexterity</span><span>14</span></div>
+              <p>A charismatic performer weaving magic through music.</p>
+              <span class="button return" onclick="flipCard('card-7')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ranger -->
+      <div class="card" id="card-8">
+        <div class="content">
+          <div class="front ranger">
+            <div class="inner">
+              <h2>Ranger</h2>
+              <span class="button" onclick="flipCard('card-8')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Dexterity</span><span>16</span></div>
+              <div class="info"><span>Wisdom</span><span>14</span></div>
+              <p>A master tracker and wilderness warrior.</p>
+              <span class="button return" onclick="flipCard('card-8')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cleric -->
+      <div class="card" id="card-9">
+        <div class="content">
+          <div class="front cleric">
+            <div class="inner">
+              <h2>Cleric</h2>
+              <span class="button" onclick="flipCard('card-9')"
+                >See Details</span
+              >
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <div class="info"><span>Wisdom</span><span>18</span></div>
+              <div class="info"><span>Charisma</span><span>14</span></div>
+              <p>A divine spellcaster channeling holy power.</p>
+              <span class="button return" onclick="flipCard('card-9')"
+                >Return</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/cards.js"></script>
+  </body>
+</html>
+
